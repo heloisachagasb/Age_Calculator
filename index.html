@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-dmy">
+            <div class="dmy">
+                <p class="d-dmy">DAY</p>
+                <input class="input-d" type="number" placeholder="DD" maxlength="2" oninput="limitInputDay(this)">
+                <p class="error-d"></p>
+                <p class="error-d1"></p>
+            </div>
+
+            <div class="dmy">
+                <p class="m-dmy">MONTH</p>
+                <input class="input-m" type="number" placeholder="MM" maxlength="2" oninput="limitInputMonth(this)">
+                <p class="error-m"></p>
+                <p class="error-m1"></p>
+            </div>
+
+            <div class="dmy">
+                <p class="y-dmy">YEAR</p>
+                <input class="input-y" type="number" placeholder="YYYY" maxlength="4" oninput="limitInputYear(this)">
+                <p class="error-y"></p>
+                <p class="error-y1"></p>
+            </div>
+        </div>
+
+        <hr> <img src="images/icon-arrow.svg" class="button" onclick="calculate()">
+
+        <div class="answer">
+            <div class="answer-p">
+                <p class="res-year">--</p>
+                <p class="a-dmy">years</p>
+            </div> <br>
+
+            <div class="answer-p">
+                <p class="res-month">--</p>
+                <p class="a-dmy">months</p>
+            </div> <br>
+
+            <div class="answer-p">
+                <p class="res-day">--</p>
+                <p class="a-dmy">days</p>
+            </div> <br>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

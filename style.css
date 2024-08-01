@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 86%);
+}
+
+.container {
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    margin-top: 15vh;
+    padding: 30px;
+    border-radius: 20px 20px 140px 20px;
+}
+
+.dmy {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: hsl(0, 1%, 44%);
+    font-size: 8pt;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.input-dmy {
+    display: flex;
+}
+
+.dmy input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px hsl(0, 0%, 86%) solid;
+    font-weight: bolder;
+    font-size: 12pt;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+    border: none;
+    margin-bottom: 15px;
+}
+
+.button {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    height: 8vh;
+    padding: 12px;
+    float: right;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+.answer-p {
+    display: flex;
+    gap: 5%;
+    font-weight: bolder;
+    font-size: 30pt;
+}
+
+.res-year,
+.res-month,
+.res-day {
+    color: hsl(259, 100%, 65%);
+    font-weight: bolder;
+}
+
+.a-dmy {
+    font-weight: bolder;
+}
+
+.error-d,
+.error-m,
+.error-y,
+.error-d1,
+.error-m1,
+.error-y1 {
+    font-weight: lighter;
+    margin-top: 5px;
+    font-style: italic;
+    color: #FF5757;
+}
+
+/*css for cellphones*/
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .dmy {
+        align-items: center;
+    }
+
+    ::placeholder {
+        text-align: center;
+    }
+
+    .input-d,
+    .input-m,
+    .input-y {
+        text-align: center;
+    }
+
+    .dmy input {
+        width: 80%;
+    }
+
+    .button {
+        height: 6vh;
+        padding: 15px;
+    }
+
+    .error-d,
+    .error-m,
+    .error-y,
+    .error-d1,
+    .error-m1,
+    .error-y1 {
+        text-align: center;
+    }
+}
